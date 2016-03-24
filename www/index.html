@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/material.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Electricity Bill Calculator</title>
+    </head>
+    <body>
+        <div class="app-body"></div>
+        <div class="card mdl-card mdl-shadow--2dp overlap">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="unit">
+                <label class="mdl-textfield__label" for="unit">Enter Total Unit</label>
+            </div>
+        </div>
+        <div class="card mdl-card mdl-shadow--2dp" id="display-table" style="display: none;">
+            <table>
+                    <thead>
+                    <tr>
+                    <td>Range</td>
+                    <td>Price/Unit</td>
+                    <td>Unit</td>
+                    <td>Bill</td>
+                    </tr>
+                    </thead>
+                    <tbody id="display-range"></tbody>
+                    <tfoot id="display-total"><tr><td></td><td></td><td>Bill</td><td>0</td></tr><tr><td></td><td></td><td>VAT</td><td>0.00</td></tr><tr><td></td><td></td><td>G. Total</td><td>0</td></tr></tfoot>
+                </table>
+            <br>
+            <span style="padding: 10px;">
+                <i>** No Metar Charge Included</i><br>
+                <i>** Tariff Rate Updated at 27 August 2015</i><br>
+                Learn More About <a href="https://www.desco.org.bd/?page=tariff-rate-2">Tariff Rate</a>.
+            </span>
+        </div>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/material.min.js"></script>
+    </body>
+</html>
