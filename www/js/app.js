@@ -41,6 +41,7 @@ function bill_cal() {
     }
     vat = ((total * 5) / 100).toFixed(2);
     gtotal = parseFloat(total) + parseFloat(vat);
+    gtotal = gtotal.toFixed(2);
     $("#display-total").append("<tr><td></td><td></td><td>Bill</td><td>" + total + "</td></tr>");
     $("#display-total").append("<tr><td></td><td></td><td>VAT</td><td>" + vat + "</td></tr>");
     $("#display-total").append("<tr><td></td><td></td><td>G. Total</td><td>" + gtotal + "</td></tr>");
