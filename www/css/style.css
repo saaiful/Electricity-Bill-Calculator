@@ -1,28 +1,52 @@
 body{ 
 	min-height: 500px; 
-	position: absolute;
+	/*background: #2196F3;*/
+	/*background-size: 100px;*/
+	/*position: relative;*/
 }
 .mdl-textfield{ width: 100%; }
-.app-body {
+.app-title{
 	width: 100%;
+	position: fixed;
+	color: white;
+	font-size:20px;
+	line-height:100px;
+	padding-left: 5%;
+	height: 70px;
+	z-index: 1002;
 	background: #2196F3;
-	height: 150px;
 }
+.app-overflow{
+	position: fixed;
+	z-index: 1000;
+	height: 100px;
+	background: #2196F3;
+	width: 100%;
+}
+
+.card-first{
+	top: 75px; 
+	z-index: 1001;
+	display: block;
+	min-height: 300px;
+	margin-left:5%; 
+	width: 90%;
+	margin-left: 5%;
+	margin-bottom: 90px;
+	min-height: 50px; 
+	padding:10px;
+}
+
 .card{
-	margin: auto;
+	display: block;
+	z-index: 1001;
 	width: 90%;
-	margin-bottom: 10px;
-	/*padding: 10px;*/
+	margin-left: 5%;
+	padding:10px;
+	margin-bottom: 20px;
+	min-height: 100px;
 }
-.overlap {
-	margin: auto;
-	margin-top: -10%;
-	width: 90%;
-	background: white;
-	min-height: 40px;
-	padding: 10px;
-	margin-bottom: 10px;
-}
+
 table { 
   width: 100%; 
   border-collapse: collapse; 

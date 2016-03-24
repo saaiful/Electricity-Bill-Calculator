@@ -10,35 +10,44 @@
         <title>Electricity Bill Calculator</title>
     </head>
     <body>
-        <div class="app-body"></div>
-        <div class="card mdl-card mdl-shadow--2dp overlap">
+        <div class="app-title">Electricity Bill Calculator</div>
+        <div class="app-overflow"></div>
+
+        <div class="mdl-card mdl-shadow--2dp card-first">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <input class="mdl-textfield__input" type="number" id="unit">
                 <label class="mdl-textfield__label" for="unit">Enter Total Unit</label>
             </div>
         </div>
-        <div class="card mdl-card mdl-shadow--2dp" id="display-table" style="display: none;">
+
+        <div class="mdl-card mdl-shadow--2dp card" id="display-table" style="display: none;">
             <table>
-                    <thead>
-                    <tr>
+                <thead>
+                <tr>
                     <td>Range</td>
                     <td>Price/Unit</td>
                     <td>Unit</td>
                     <td>Bill</td>
-                    </tr>
-                    </thead>
-                    <tbody id="display-range"></tbody>
-                    <tfoot id="display-total"><tr><td></td><td></td><td>Bill</td><td>0</td></tr><tr><td></td><td></td><td>VAT</td><td>0.00</td></tr><tr><td></td><td></td><td>G. Total</td><td>0</td></tr></tfoot>
-                </table>
+                </tr>
+                </thead>
+                <tbody id="display-range"></tbody>
+                <tfoot id="display-total"><tr><td></td><td></td><td>Bill</td><td>0</td></tr><tr><td></td><td></td><td>VAT</td><td>0.00</td></tr><tr><td></td><td></td><td>G. Total</td><td>0</td></tr></tfoot>
+            </table>
             <br>
-            <span style="padding: 10px;">
-                <i>** No Meter Charge Included</i><br>
-                <i>** Tariff Rate Updated at 27 August 2015</i><br>
+            <span>
+                <i>*No Meter Charge Included</i><br>
+                <i>*Tariff Rate Updated at 27 August 2015</i><br>
                 Learn More About <a href="https://www.desco.org.bd/?page=tariff-rate-2">Tariff Rate</a>.
             </span>
         </div>
+
+        <div class="mdl-card mdl-shadow--2dp card" style="text-align: center;">
+            Designed &amp; Developed By <strong>Uxlab Ltd.</strong><br>
+            <a onclick="navigator.app.loadUrl('http://uxlab.com.bd/', { openExternal:true });" ><img src="img/uxlab_logo.png" width="50%"></a>
+        </div>
+
+        
         <script type="text/javascript" src="js/jquery.js"></script>
-        <!-- <script type="text/javascript" src="cordova.js"></script> -->
         <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript" src="js/material.min.js"></script>
     </body>
